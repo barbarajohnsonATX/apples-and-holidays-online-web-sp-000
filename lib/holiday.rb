@@ -104,6 +104,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_array = []
   holiday_hash.each do |season, holiday| 
     holiday.each do |day, supplies| 
+      #supplies is array so look for "BBQ"
       if supplies.include?("BBQ")
         holiday_array << day 
       end 
