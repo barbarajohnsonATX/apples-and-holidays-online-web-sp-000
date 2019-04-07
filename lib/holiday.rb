@@ -79,14 +79,11 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season_string}:"
     day_array = []
     holiday.each do |day, supplies|
-      day_array.each {|day| day.to_s } #change day to string and put in array 
+      day_array.map {|day| day.to_s } #change day to string and put in array 
+      binding.pry 
       day_array.each do |day| 
         day.capitalize.gsub("_", " ")
       end 
-      day_array.each do |day| 
-        puts "  #{day}: #{supplies}"
-      end 
-    end 
     end 
 
 end
