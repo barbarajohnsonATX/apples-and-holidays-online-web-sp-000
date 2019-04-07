@@ -81,8 +81,9 @@ def all_supplies_in_holidays(holiday_hash)
     
     
     holiday.each do |day, supplies|
-        day_temp = day.to_s.split("_").titleize 
-        
+        day_string = day.to_s.split("_")
+        day_string.titleize
+         
      end 
     
     
