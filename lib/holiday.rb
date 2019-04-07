@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
     season_string = season.to_s.capitalize
     
     puts "#{season_string}:"
-
+    day_array = []
     holiday.each do |day, supplies|
       day_string = day.to_s.capitalize
       day_string = day_string.gsub("_", " ")
