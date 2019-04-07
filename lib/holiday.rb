@@ -84,7 +84,7 @@ def all_supplies_in_holidays(holiday_hash)
         day.capitalize.gsub("_", " ")
       end 
       day_array.each do |day| 
-        puts "  #{day}: #{supplies.join(", ")}"
+        puts "  #{day}: #{supplies}"
       end 
     end 
 
