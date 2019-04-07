@@ -77,8 +77,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     puts "#{season_string}:"
     day_array = []
-    # = ""
-    
+
     holiday.each do |day, supplies|
         #global substitute 
         day_string = day.to_s.gsub("_", " ")
@@ -102,7 +101,15 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-
+  holiday_array = []
+  holiday_hash.each do |season, holiday| 
+    holiday.each do |day, supplies| 
+      if supplies.include?("BBQ")
+        holiday_array << day 
+      end 
+    end 
+  end 
+        
 end
 
 
