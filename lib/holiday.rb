@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     holiday.each do |day, supplies|
  
-      day_array.map { |day| day.capitalize}
+      day_array.map { |day| day.to_s.capitalize}
       binding.pry 
       day_string = day_array.join(" ")
        day_string.gsub!("_", " ")
