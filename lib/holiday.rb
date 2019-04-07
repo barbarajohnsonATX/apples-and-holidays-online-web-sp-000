@@ -84,9 +84,7 @@ def all_supplies_in_holidays(holiday_hash)
         day_temp_array << day.to_s.split("_") 
     end 
     
-    day_temp_array.collect do |day|
-      day.capitalize
-    end
+    
     binding.pry 
   end 
 
