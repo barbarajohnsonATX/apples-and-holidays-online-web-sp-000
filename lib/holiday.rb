@@ -78,8 +78,9 @@ def all_supplies_in_holidays(holiday_hash)
       if day == :new_years
         binding.pry
       end 
-      day_array = day.capitalize 
-      day_string = day_array.to_s
+      day_array.map { |day| day.capitalize}
+      
+      day_string = day_array.join(" ")
       
       day_string.gsub!("_", " ")
       puts "#{season.capitalize}:"
