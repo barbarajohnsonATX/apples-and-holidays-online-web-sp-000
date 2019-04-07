@@ -83,6 +83,8 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |day, supplies|
         day_string = day.to_s.sub("_", " ")
         day_temp_array = day_string.split 
+        day_temp_array.collect {|day| day.capitalize!}
+        day_string = day_temp_array.join(", ")
         #supplies is array, convert to string 
         supplies_string = supplies.join(", ")
         puts "  #{day_string}: #{supplies_string}"
