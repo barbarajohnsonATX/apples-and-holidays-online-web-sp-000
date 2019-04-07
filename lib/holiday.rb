@@ -86,7 +86,7 @@ def all_supplies_in_holidays(holiday_hash)
         day_temp_array.collect {|day| day.capitalize!}
         day_string = day_temp_array.join(", ")
         #supplies is array, convert to string 
-        supplies_string = supplies.join(", ")
+        supplies_string = supplies.join(" ")
         puts "  #{day_string}: #{supplies_string}"
 
      end 
