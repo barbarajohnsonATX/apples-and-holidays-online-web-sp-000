@@ -77,6 +77,9 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |day, supplies|
       day = day.to_s
       day_array = day.split
+      if day == :new_years
+        binding.pry
+      end 
       day_array = day.capitalize 
       day_string = day_array.to_s
       
