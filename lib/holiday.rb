@@ -75,7 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
   day_array = []
   holiday_hash.each do |season, holiday|
     holiday.each do |day, supplies|
-      day_array = day.to_a
+      day = day.to_s
       day_array = day.split
       day_array = day.upcase 
       day_string = day_array.to_s
