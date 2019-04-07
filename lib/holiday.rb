@@ -75,9 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
   day_array = []
   holiday_hash.each do |season, holiday|
     holiday.each do |day, supplies|
-      if day == :new_years
-        binding.pry
-      end 
+ 
       day_array.map { |day| day.capitalize}
       
       day_string = day_array.join(" ")
