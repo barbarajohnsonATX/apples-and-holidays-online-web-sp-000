@@ -85,7 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
       end 
       day_array.each {|day| puts "  #{day}: #{supplies.join(", ")""}
     
-  qend 
+   end 
 
 end
 
