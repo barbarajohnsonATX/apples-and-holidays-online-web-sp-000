@@ -79,8 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
       day_array.map { |day| day.capitalize}
       
       day_string = day_array.join(" ")
-      binding.pry 
-      day_string.gsub!("_", " ")
+       day_string.gsub!("_", " ")
       puts "#{season.capitalize}:"
       puts "  #{day_string}: #{supplies.join(", ")}"
     end
