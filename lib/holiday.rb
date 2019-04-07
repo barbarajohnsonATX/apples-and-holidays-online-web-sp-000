@@ -80,6 +80,8 @@ def all_supplies_in_holidays(holiday_hash)
     day_temp_array = []
     holiday.each do |day, supplies|
       day_string = day.to_s.gsub("_", " ")
+      day_temp_array << day.string.split 
+      
       day_temp_array.map {|day| day_string.split.capitalize}
       binding.pry 
       day_string = day_string.gsub("_", " ")
