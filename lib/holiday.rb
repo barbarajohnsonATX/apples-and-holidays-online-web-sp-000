@@ -77,7 +77,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     puts "#{season_string}:"
     day_array = []
-    day_string = ""
+    # = ""
     
     holiday.each do |day, supplies|
         #global substitute 
@@ -95,10 +95,6 @@ def all_supplies_in_holidays(holiday_hash)
         puts "  #{day_string}: #{supplies_string}"
 
      end 
-     
-     
-
-    
   end 
 
 end
