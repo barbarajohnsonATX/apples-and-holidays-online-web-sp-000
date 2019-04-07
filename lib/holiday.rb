@@ -82,10 +82,12 @@ def all_supplies_in_holidays(holiday_hash)
     
     holiday.each do |day, supplies|
         day_temp_array << day.to_s.split("_") 
-      end 
+    end 
+    
     day_temp_array.map do |day|
       day.capitalize
-    end 
+    end
+    binding.pry 
   end 
 
 end
