@@ -78,7 +78,10 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season_string}:"
     day_array = []
     day_temp_array = []
+    
+    
     holiday.each do |day, supplies|
+      day = :new_years 
        day_temp_array = day.to_s.split("_") 
       
       
