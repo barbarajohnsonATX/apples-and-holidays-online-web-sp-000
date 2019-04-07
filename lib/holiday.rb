@@ -85,6 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
         day.capitalize.gsub("_", " ")
       end 
     end 
+  end 
 
 end
 
